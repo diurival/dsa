@@ -131,12 +131,6 @@ Imprime los elementos de la lista asumiendo que cada `Type` es un puntero a `int
 
 ---
 
-## Bugs identificados
-
-No se identificaron bugs en esta versión. ✅
-
----
-
 ## Historial de correcciones
 
 | Versión | Función | Corrección aplicada |

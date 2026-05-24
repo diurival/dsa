@@ -7,8 +7,8 @@
 typedef void * Type;
 #endif
 
-#ifndef linked_list_h
-#define linked_list_h
+#ifndef singly_linked_list_h
+#define singly_linked_list_h
 
 typedef struct strLink * Link;
 

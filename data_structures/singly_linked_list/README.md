@@ -1,4 +1,4 @@
-# Linked List — Documentación en C
+# Singly Linked List — Documentación en C
 
 Implementación de una **lista enlazada simple** en C con soporte para destructor de datos genérico (`void *`).
 

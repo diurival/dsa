@@ -101,4 +101,5 @@ Todas las estructuras siguen las mismas convenciones:
 
 ## Autor
 Diego Uribe Alvarez
+
 Hecho a mano en C como parte de mi aprendizaje de estructuras de datos y algoritmos.

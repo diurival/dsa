@@ -8,11 +8,13 @@ Implementaciones de estructuras de datos fundamentales en C, con soporte para da
 
 | Estructura | Archivo | Estado |
 |---|---|---|
-| Singly Linked List | `linked_list/` | ✅ |
+| Singly Linked List | `singly_linked_list/` | ✅ |
 | Doubly Linked List | `doubly_linked_list/` | ✅ |
 | Stack | `stack/` | ✅ |
 | Queue | `queue/` | ✅ |
 | Binary Search Tree | `binary_tree/` | ✅ |
+| AVL Tree | `avl_tree/` | ✅ |
+| Heap | `heap/` | ✅ |
 
 ---
 
@@ -40,6 +42,14 @@ dsa/
 │   ├── binary_tree.h
 │   ├── binary_tree.c
 │   └── README.md
+├── avl_tree/
+│   ├── avl_tree.h
+│   ├── avl_tree.c
+│   └── README.md
+├── heap/
+│   ├── heap.h
+│   ├── heap.c
+│   └── README.md
 └── README.md
 ```
 
@@ -52,7 +62,7 @@ Todas las estructuras siguen las mismas convenciones:
 - `Type` es un alias de `void *` — permite almacenar cualquier tipo de dato.
 - Todas aceptan un `destructor` opcional en el `init` para liberar la memoria de los datos.
 - Las funciones verifican `NULL` antes de operar.
-- El BST acepta además un `comparator` con la convención de `qsort`: negativo, 0, o positivo.
+- BST, AVL y Heap aceptan un `comparator` con la convención de `qsort`: negativo, 0, o positivo.
 
 ---
 
@@ -61,11 +71,11 @@ Todas las estructuras siguen las mismas convenciones:
 ### Singly Linked List
 | Función | Complejidad |
 |---|---|
-| `linked_list_append` | O(1) |
-| `linked_list_prepend` | O(1) |
-| `linked_list_insert` | O(n) |
-| `linked_list_delete` | O(n) |
-| `linked_list_find` | O(n) |
+| `singly_linked_list_append` | O(1) |
+| `singly_linked_list_prepend` | O(1) |
+| `singly_linked_list_insert` | O(n) |
+| `singly_linked_list_delete` | O(n) |
+| `singly_linked_list_find` | O(n) |
 
 ### Doubly Linked List
 | Función | Complejidad |
@@ -96,6 +106,20 @@ Todas las estructuras siguen las mismas convenciones:
 | `binary_tree_insert` | O(log n) promedio |
 | `binary_tree_delete` | O(log n) promedio |
 | `binary_tree_search` | O(log n) promedio |
+
+### AVL Tree
+| Función | Complejidad |
+|---|---|
+| `avl_tree_insert` | O(log n) garantizado |
+| `avl_tree_delete` | O(log n) garantizado |
+| `avl_tree_search` | O(log n) garantizado |
+
+### Heap
+| Función | Complejidad |
+|---|---|
+| `heap_insert` | O(log n) |
+| `heap_extract` | O(log n) |
+| `heap_peek` | O(1) |
 
 ---
 
